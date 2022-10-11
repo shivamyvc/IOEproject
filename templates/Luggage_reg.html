@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Au Register Forms by Colorlib</title>
+
+    <!-- Icons font CSS-->
+    <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="/static/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Passenger Details </h2>
+                    <form method="POST" action="/submit_luggage_reg">
+                        <div class="input-group">
+                            Passenger ID    <input class="input--style-1" type="text" disabled  name="Passenger_id" value="{{passenger_details.0}}">
+                            </div>
+                        <div class="input-group">
+                        Full Name    <input class="input--style-1" type="text" disabled  name="name" value="{{passenger_details.1}}">
+                        </div>
+                        <div class="input-group">
+                          Phone <input class="input--style-1" type="text" disabled  maxlength="10" pattern="[1-9]{1}[0-9]{9}" value="{{passenger_details.2}}" name="phone">
+                      </div>
+
+                      <div class="input-group">
+                        Address <input class="input--style-1" disabled type="text"  name="address" value="{{passenger_details.3}}">
+                    </div>
+                    <div class="input-group">
+                        Luggage ID <input class="input--style-1" disabled type="text"  name="address" value="{{passenger_details.4}}">
+                    </div>
+                        <div class="p-t-20">
+                            <button  class="btn btn--radius btn--green" type="submit">Generate Tag</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS-->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="/static/vendor/select2/select2.min.js"></script>
+    <script src="/static/vendor/datepicker/moment.min.js"></script>
+    <script src="/static/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="/static/js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
